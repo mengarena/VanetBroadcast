@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="none"
+	>
+<!-- LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    -->
+  
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		<TextView  
+			android:id="@+id/SendCountLabel"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/sendcountlabel"
+		    />    
+		<EditText
+			    android:id="@+id/SendCount"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			    android:text = "100"   
+			    />
+	</TableRow>
+	<TableRow>
+		<TextView  
+			android:id="@+id/SendIntervalLabel"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/sendintervallabel"
+		    /> 
+		       
+		<EditText
+			    android:id="@+id/SendInterval"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			    android:text = "1500"   
+			    />
+	</TableRow>
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		<RadioGroup
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/RdGpDataSizeType">
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/RdDataSizeSmall"
+				android:text="@string/smallsize">
+			</RadioButton>
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/RdDataSizeMedian"
+				android:text="@string/mediansize">
+			</RadioButton>
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/RdDataSizeBig"
+				android:text="@string/bigsize">
+			</RadioButton>
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/RdDataSizeLarge"
+				android:text="@string/largesize">
+			</RadioButton>			
+		</RadioGroup>
+	</TableRow>
+
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >	
+		<Button android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:id="@+id/Start"
+				android:text="@string/start"
+				/>
+		<Button android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:id="@+id/Reset"
+				android:text="@string/reset"
+				/>
+				
+	</TableRow>
+
+	<TableRow>
+		<TextView  
+			android:id="@+id/ShowIPLabel"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="IP:"
+		    />
+	    
+	   	<TextView  
+			android:id="@+id/ShowIP"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text=""
+		    />
+	</TableRow>
+		
+	<TableRow>
+		<TextView  
+			android:id="@+id/SendLabel"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="Sent:"
+		    />
+		<TextView  
+			android:id="@+id/SendInfo"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text=""
+		    />
+	</TableRow>
+
+	<TableRow>
+		<TextView  
+			android:id="@+id/ReceiveLabel"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="Received:"
+		    />
+		<TextView  
+			android:id="@+id/ReceiveInfo"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text=""
+		    />
+	</TableRow>
+				
+	<TableRow>
+					    
+	    <TextView  
+			android:id="@+id/ShowInfo"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text=""
+		    />
+	</TableRow>
+
+</TableLayout>
+
+</ScrollView>
