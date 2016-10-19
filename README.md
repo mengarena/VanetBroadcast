@@ -1,1 +1,1 @@
-In OmniView/DriverTalk,  broadcast images to neighboring vehicles
+In OmniView/DriverTalk projects,  (randomly) broadcast images to neighboring vehicles through Ad-hoc 
