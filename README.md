@@ -1,1 +1,1 @@
-In OmniView/DriverTalk projects,  (randomly) broadcast images to neighboring vehicles through Ad-hoc 
+CV-based V2V applications (used in OmniView and DriverTalk),  (randomly) broadcast images to neighboring vehicles through Ad-hoc 
